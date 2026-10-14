@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="qr_scan"
+        android:enabled="true"
+        android:icon="@drawable/ic_qr_code"
+        android:shortcutShortLabel="@string/shortcut_qr_scan"
+        android:shortcutLongLabel="@string/shortcut_qr_scan_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="uz.jtscorp.xarajatlar"
+            android:targetClass="uz.jtscorp.xarajatlar.ui.auth.LockActivity">
+            <extra android:name="shortcut_target" android:value="qr_scan" />
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="add_expense"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_expense"
+        android:shortcutShortLabel="@string/shortcut_add_expense"
+        android:shortcutLongLabel="@string/shortcut_add_expense_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="uz.jtscorp.xarajatlar"
+            android:targetClass="uz.jtscorp.xarajatlar.ui.auth.LockActivity">
+            <extra android:name="shortcut_target" android:value="add_expense" />
+        </intent>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="ocr_scan"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_ocr"
+        android:shortcutShortLabel="@string/shortcut_ocr_scan"
+        android:shortcutLongLabel="@string/shortcut_ocr_scan_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="uz.jtscorp.xarajatlar"
+            android:targetClass="uz.jtscorp.xarajatlar.ui.auth.LockActivity">
+            <extra android:name="shortcut_target" android:value="ocr_scan" />
+        </intent>
+    </shortcut>
+
+</shortcuts>

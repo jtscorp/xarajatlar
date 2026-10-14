@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="income_green">#85D7B2</color>
+    <color name="debt_red_light">#FFB4AA</color>
+    <color name="history_income">#85D7B2</color>
+    <color name="history_expense">#FFB4AA</color>
+
+    <color name="app_primary">#85D7B2</color>
+    <color name="app_on_primary">#073828</color>
+    <color name="app_primary_container">#215540</color>
+    <color name="app_on_primary_container">#C4F3DD</color>
+    <color name="app_background">#101813</color>
+    <color name="app_surface">#1A251E</color>
+    <color name="app_surface_variant">#27362C</color>
+    <color name="app_text">#E2ECE4</color>
+    <color name="app_text_secondary">#B3C3B7</color>
+    <color name="app_outline">#53675A</color>
+</resources>

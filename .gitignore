@@ -1,0 +1,12 @@
+*.iml
+.gradle
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Signing keys never go into the repo
+*.jks
+*.keystore
+keystore.properties

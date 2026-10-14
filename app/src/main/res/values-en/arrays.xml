@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tartib AppDatabase.populateDefaultData dagi emoji va rang massivlariga mos. -->
+    <string-array name="default_expense_categories">
+        <item>Food</item>
+        <item>Transport</item>
+        <item>Clothing</item>
+        <item>Utilities</item>
+        <item>Health</item>
+        <item>Education</item>
+        <item>Entertainment</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="default_income_categories">
+        <item>Salary</item>
+        <item>Bonus</item>
+        <item>Freelance</item>
+        <item>Rent</item>
+        <item>Other</item>
+    </string-array>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="?android:colorBackground" android:clipToPadding="false"
+    android:fillViewport="true" android:paddingBottom="96dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingHorizontal="16dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:text="@string/home_title"
+            android:textAppearance="?textAppearanceHeadlineSmall" android:textStyle="bold" />
+        <TextView android:id="@+id/periodTitleText" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="4dp"
+            android:text="@string/ui_joriy_oy" android:textColor="?colorOnSurfaceVariant" />
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="16dp"
+            app:cardBackgroundColor="?colorPrimaryContainer" app:cardCornerRadius="24dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/home_period_difference" android:textColor="?colorOnPrimaryContainer" />
+                <TextView android:id="@+id/periodDifferenceText" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="4dp"
+                    android:breakStrategy="simple" tools:text="0 so‘m"
+                    android:textColor="?colorOnPrimaryContainer" android:textSize="32sp"
+                    android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" android:text="@string/home_difference_hint"
+                    android:textColor="?colorOnPrimaryContainer" android:textSize="12sp" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" android:orientation="horizontal">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/income_label" android:textColor="?colorOnPrimaryContainer" />
+                        <TextView android:id="@+id/totalIncomeText" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:maxLines="2" tools:text="0 so‘m"
+                            android:textColor="@color/history_income" android:textSize="17sp" android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/expense_label" android:textColor="?colorOnPrimaryContainer" />
+                        <TextView android:id="@+id/totalExpenseText" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:maxLines="2" tools:text="0 so‘m"
+                            android:textColor="@color/history_expense" android:textSize="17sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/homeAddButton" android:layout_width="0dp"
+                android:layout_height="52dp" android:layout_weight="1"
+                android:text="@string/ui_qoshish" app:icon="@drawable/ic_add"
+                app:cornerRadius="@dimen/corner_radius_medium" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/homeScanButton" style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp" android:layout_height="52dp"
+                android:layout_marginStart="8dp" android:layout_weight="1"
+                android:text="@string/home_scan" app:icon="@drawable/ic_qr_code"
+                app:cornerRadius="@dimen/corner_radius_medium" />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            app:cardBackgroundColor="?colorSurfaceVariant">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+                <ImageView android:layout_width="32dp" android:layout_height="32dp"
+                    android:contentDescription="@null" android:src="@drawable/ic_debts"
+                    app:tint="?colorOnSurfaceVariant" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/ui_faol_qarzlar_qoldigi" android:textColor="?colorOnSurfaceVariant" />
+                    <TextView android:id="@+id/totalDebtText" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" tools:text="0 so‘m" android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/recent_activity"
+                android:textAppearance="?textAppearanceTitleMedium" android:textStyle="bold" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/viewAllTransactionsButton"
+                style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content"
+                android:layout_height="48dp" android:text="@string/ui_barchasi" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recentRecyclerView"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+        <TextView android:id="@+id/emptyState" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center" android:padding="24dp"
+            android:text="@string/no_activity" android:textColor="?colorOnSurfaceVariant"
+            android:visibility="gone" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

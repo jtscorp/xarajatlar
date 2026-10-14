@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Zaxiralar ilova o'chirilganda yo'qolmasligi uchun umumiy "backups" papkasiga yoziladi. -->
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Xarajatlar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="35">
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode,ocr" />
+
+        <!-- Lock Activity - Launcher -->
+        <activity
+            android:name=".ui.auth.LockActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Xarajatlar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <!-- Language Activity (first launch) -->
+        <activity
+            android:name=".ui.auth.LanguageActivity"
+            android:exported="false" />
+
+        <!-- Setup Activity -->
+        <activity
+            android:name=".ui.auth.SetupActivity"
+            android:exported="false" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Add Expense Activity -->
+        <activity
+            android:name=".ui.expense.AddExpenseActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- QR Scan Activity -->
+        <activity
+            android:name=".ui.camera.QrScanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- OCR Scan Activity -->
+        <activity
+            android:name=".ui.camera.OcrScanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Manual Expense Activity -->
+        <activity
+            android:name=".ui.expense.ManualExpenseActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Add Income Activity -->
+        <activity
+            android:name=".ui.income.AddIncomeActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ui.history.TransactionDetailActivity"
+            android:exported="false" />
+
+        <!-- Receipt Confirm Activity -->
+        <activity
+            android:name=".ui.expense.ReceiptConfirmActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Debt Detail Activity -->
+        <activity
+            android:name=".ui.debts.DebtDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Settings Management Activities -->
+        <activity
+            android:name=".ui.settings.ManageFamilyMembersActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.settings.ManageCategoriesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.settings.ManageIncomeCategoriesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.settings.ManagePaymentMethodsActivity"
+            android:exported="false" />
+
+        <!-- Hidden Record Service -->
+        <service
+            android:name=".service.HiddenRecordService"
+            android:exported="false"
+            android:foregroundServiceType="camera" />
+
+        <!-- FileProvider for sharing files -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="uz.jtscorp.xarajatlar.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

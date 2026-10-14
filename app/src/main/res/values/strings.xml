@@ -1,0 +1,286 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="uz">
+    <string name="receipt_loading">Chek yuklanmoqda…</string>
+    <string name="receipt_load_failed">Chek ma’lumotlari yuklanmadi. Summani qo‘lda kiriting.</string>
+    <string name="shop_name_optional">Do‘kon nomi (ixtiyoriy)</string>
+    <string name="shop_name_help">Avvalgi do‘konlardan tanlang yoki yangi nom yozing.</string>
+    <string name="amount_required">Summani kiriting.</string>
+    <string name="invalid_amount">Summa noto‘g‘ri.</string>
+    <string name="payment_range_error">0 dan katta, qolgan qarzdan oshmagan summa kiriting.</string>
+    <string name="debt_amount_error">Qarz summasi 0 dan katta va to‘langan summadan kam bo‘lmasin.</string>
+    <string name="debt_date_error">Qaytarish muddati berilgan sanadan oldin bo‘lmasin.</string>
+    <string name="debt_not_found">Qarz topilmadi.</string>
+    <string name="category_required">Kategoriyani tanlang.</string>
+    <string name="positive_amount_error">0 dan katta summa kiriting.</string>
+    <string name="date_required">Sanani tanlang.</string>
+    <string name="name_required">Nomni kiriting.</string>
+    <string name="card_digits_error">Oxirgi 4 raqamni kiriting.</string>
+    <string name="pin_delete_digit">Oxirgi raqamni o‘chirish</string>
+    <string name="save_failed">Saqlab bo‘lmadi.</string>
+    <string name="note_optional">Izoh (ixtiyoriy)</string>
+    <string name="camera_permission_title">Kameraga ruxsat</string>
+    <string name="qr_camera_permission_message">QR chekni o‘qish uchun kameraga ruxsat bering. Xohlasangiz xarajatni qo‘lda kiriting.</string>
+    <string name="ocr_camera_permission_message">Chekdagi summani o‘qish uchun kameraga ruxsat bering. Xohlasangiz xarajatni qo‘lda kiriting.</string>
+    <string name="allow_camera">Kameraga ruxsat berish</string>
+    <string name="enter_manually">Qo‘lda kiritish</string>
+    <string name="camera_unavailable">Kamera ochilmadi</string>
+    <string name="camera_denied_message">Kameraga ruxsat berilmagan. Xarajatni qo‘lda kiritishingiz mumkin.</string>
+    <string name="close">Yopish</string>
+    <string name="home_title">Moliyaviy holat</string>
+    <string name="home_period_difference">Shu oy farqi</string>
+    <string name="home_difference_hint">Kirim − xarajat</string>
+    <string name="income_label">Kirim</string>
+    <string name="expense_label">Xarajat</string>
+    <string name="home_scan">Skanerlash</string>
+    <string name="debts_title">Qarzlar</string>
+    <string name="history_title">Tarix</string>
+    <string name="add_family_member">Oila a’zosini qo‘shish</string>
+    <string name="location_permission_title">Joylashuvga ruxsat</string>
+    <string name="location_permission_message">Qarzga joriy joylashuvingizni biriktirish uchun ruxsat bering.</string>
+    <string name="allow_location">Joylashuvga ruxsat berish</string>
+    <string name="debt_photo_permission_message">Qarz dalili uchun surat olishga kameradan foydalanishga ruxsat bering.</string>
+    <string name="recent_activity">So‘nggi amallar</string>
+    <string name="no_activity">Hali amallar yo‘q</string>
+    <string name="money_amount" translatable="false">%1$s %2$s</string>
+    <string name="signed_money_amount" translatable="false">%1$s%2$s %3$s</string>
+    <string name="delete_transaction">Operatsiyani o‘chirish</string>
+    <string name="delete_transaction_message">Ushbu yozuvni o‘chirmoqchimisiz?</string>
+    <string name="delete">O‘chirish</string>
+    <string name="cancel">Bekor qilish</string>
+    <string name="nav_home">Asosiy</string>
+    <string name="nav_statistics">Statistika</string>
+    <string name="nav_settings">Sozlamalar</string>
+    <string name="payment_card">💳 Plastik</string>
+    <string name="payment_cash">💵 Naqd</string>
+    <string name="income_emoji" translatable="false">💰</string>
+    <string name="expense_emoji" translatable="false">🛒</string>
+    <string name="color_option">%1$d-rang %2$s</string>
+    <string name="selected">tanlangan</string>
+    <string name="scan_qr_receipt">QR chekni skanerlash</string>
+    <string name="scan_amount">Summani o‘qish</string>
+    <string name="settings_language">Til</string>
+    <string name="language_title">Tilni tanlang</string>
+    <string name="language_continue">Davom etish</string>
+
+    <!-- Common -->
+    <string name="yes">Ha</string>
+    <string name="no">Yo‘q</string>
+    <string name="open">Ochish</string>
+    <string name="share">Ulashish</string>
+    <string name="update">Yangilash</string>
+    <string name="unassigned">Biriktirilmagan</string>
+    <string name="unknown">Noma’lum</string>
+    <string name="file_not_found">Fayl topilmadi</string>
+    <string name="error_with_message">Xatolik: %1$s</string>
+    <string name="labeled_value">%1$s: %2$s</string>
+    <string name="delete_named_message">“%1$s” ni o‘chirmoqchimisiz?</string>
+
+    <!-- Auth -->
+    <string name="pin_enter_title">PIN kiriting</string>
+    <plurals name="pin_wrong_attempts_left">
+        <item quantity="one">Noto‘g‘ri PIN. %d urinish qoldi</item>
+        <item quantity="other">Noto‘g‘ri PIN. %d urinish qoldi</item>
+    </plurals>
+    <plurals name="pin_lockout_seconds">
+        <item quantity="one">%d soniya kuting…</item>
+        <item quantity="other">%d soniya kuting…</item>
+    </plurals>
+    <string name="pin_wait">Kuting…</string>
+    <string name="biometric_subtitle">Xarajatlar ilovasiga kirish</string>
+    <string name="biometric_use_pin">PIN ishlatish</string>
+    <string name="pin_create_title">PIN kod yarating</string>
+    <string name="pin_create_subtitle">4 raqamli PIN kiriting</string>
+    <string name="pin_confirm_title">PIN ni tasdiqlang</string>
+    <string name="pin_confirm_subtitle">PIN ni qayta kiriting</string>
+    <string name="pin_mismatch">PIN lar mos kelmadi</string>
+
+    <!-- Settings -->
+    <string name="salary_day_summary">Har oyning %1$d-kuni</string>
+    <string name="export_confirm_message">Barcha ma’lumotlar ZIP faylga saqlanadi. Davom etasizmi?</string>
+    <string name="export_progress">Eksport qilinmoqda…</string>
+    <string name="export_success_title">Muvaffaqiyatli</string>
+    <string name="export_success_message">Ma’lumotlar saqlandi:\n%1$s</string>
+    <string name="share_file">Faylni ulashish</string>
+    <string name="import_confirm_message">OGOHLANTIRISH: Barcha mavjud ma’lumotlar o‘chiriladi va yangilari tiklanadi. Davom etasizmi?</string>
+    <string name="import_progress">Import qilinmoqda…</string>
+    <string name="import_success">Ma’lumotlar muvaffaqiyatli tiklandi</string>
+    <string name="backup_folder_change">Papkani o‘zgartirish</string>
+    <string name="backup_folder_reset">Standartga qaytarish</string>
+    <string name="backup_folder_choose">Papka tanlash</string>
+    <string name="backup_folder_selected">Tanlangan papka</string>
+
+    <!-- Manage lists -->
+    <string name="category_name_hint">Kategoriya nomi</string>
+    <string name="category_new">Yangi kategoriya</string>
+    <string name="family_member_new">Yangi a’zo</string>
+    <string name="payment_method_new">Yangi to‘lov usuli</string>
+
+    <!-- Expense / income -->
+    <string name="expense_edit_title">Xarajatni tahrirlash</string>
+    <string name="expense_not_found">Xarajat topilmadi</string>
+    <string name="expense_loading">Xarajat yuklanmoqda</string>
+    <string name="expense_saved">Xarajat saqlandi</string>
+    <string name="expense_updated">Xarajat yangilandi</string>
+    <string name="expense_uncategorized">Kategoriyasiz xarajat</string>
+    <string name="income_edit_title">Daromadni tahrirlash</string>
+    <string name="income_not_found">Daromad topilmadi</string>
+    <string name="income_loading">Daromad yuklanmoqda</string>
+    <string name="income_saved">Daromad saqlandi</string>
+    <string name="income_updated">Daromad yangilandi</string>
+    <string name="amount_too_large">Summa juda katta</string>
+    <string name="receipt_link">Chek: %1$s</string>
+
+    <!-- Camera -->
+    <string name="camera_failed">Kamera ishlamadi</string>
+    <string name="camera_failed_detail">Kamera ishlamadi: %1$s</string>
+
+    <!-- History -->
+    <string name="history_load_failed">Tarixni yuklab bo‘lmadi</string>
+    <string name="history_empty_title">Tarix hali bo‘sh</string>
+    <string name="history_empty_message">Xarajat yoki daromad qo‘shilganda shu yerda ko‘rinadi.</string>
+    <string name="history_no_match_title">Mos yozuv topilmadi</string>
+    <string name="history_no_match_message">Qidiruv yoki filtrlarni o‘zgartirib ko‘ring.</string>
+    <plurals name="record_count">
+        <item quantity="one">%d ta yozuv</item>
+        <item quantity="other">%d ta yozuv</item>
+    </plurals>
+    <string name="history_totals">Daromad +%1$s  •  Xarajat −%2$s  •  Farq %3$s</string>
+    <string name="chip_search">Qidiruv: %1$s</string>
+    <string name="chip_family">Oila</string>
+    <string name="chip_payment">To‘lov</string>
+    <string name="chip_relation_id">%1$s #%2$d</string>
+    <string name="amount_range">%1$s – %2$s</string>
+    <string name="sort_newest">Eng yangi</string>
+    <string name="sort_oldest">Eng eski</string>
+    <string name="sort_amount_desc">Summa: katta</string>
+    <string name="sort_amount_asc">Summa: kichik</string>
+    <string name="filter_all_categories">Barcha kategoriyalar</string>
+    <string name="filter_selected_id">Tanlangan (#%1$d)</string>
+    <string name="filter_start_date">Boshlanish sanasi</string>
+    <string name="filter_end_date">Tugash sanasi</string>
+    <string name="filter_lookup_failed">Filtr ma’lumotlarini yuklab bo‘lmadi. Oynani yopib qayta oching.</string>
+    <string name="filter_min_gt_max">Min summa max summadan katta</string>
+    <string name="filter_start_after_end">Boshlanish sanasi tugash sanasidan keyin</string>
+    <string name="filter_check_range">Sana oralig‘ini tekshiring</string>
+    <string name="filter_positive_amount">Musbat summa kiriting</string>
+    <string name="filter_invalid">Filtr noto‘g‘ri</string>
+
+    <!-- Transaction detail -->
+    <string name="transaction_invalid">Operatsiya noto‘g‘ri</string>
+    <string name="transaction_not_found">Operatsiya topilmadi</string>
+    <string name="transaction_deleted">Operatsiya o‘chirildi</string>
+    <string name="income_detail_title">Daromad tafsiloti</string>
+    <string name="expense_detail_title">Xarajat tafsiloti</string>
+    <string name="delete_irreversible">Bu amalni ortga qaytarib bo‘lmaydi.</string>
+    <string name="open_receipt_title">Tashqi chek havolasini ochish</string>
+    <string name="open_receipt_message">Havola %1$s saytida ochiladi.</string>
+    <string name="open_receipt_chooser">Chek havolasini ochish</string>
+    <string name="source_income">Manba</string>
+    <string name="source_expense">Savdo joyi</string>
+
+    <!-- Stats -->
+    <string name="chart_pie">Doira</string>
+    <string name="chart_bar">Ustunli</string>
+    <string name="chart_no_data">Ma’lumot yo‘q</string>
+    <string name="date_range_title">Sana oralig‘i</string>
+    <string name="date_range">%1$s — %2$s</string>
+    <string name="stats_calculating">Hisoblanmoqda…</string>
+    <string name="stats_empty_period">Tanlangan davrda yozuv yo‘q</string>
+    <string name="stats_tap_slice">Kesimni bosib yozuvlarni ko‘ring</string>
+    <string name="stats_failed">Hisoblab bo‘lmadi. Qayta urinish uchun bosing</string>
+    <string name="stats_item_description">%1$s, %2$s. Yozuvlarni ko‘rish</string>
+
+    <!-- Debts -->
+    <plurals name="item_count">
+        <item quantity="one">%d ta</item>
+        <item quantity="other">%d ta</item>
+    </plurals>
+    <string name="debts_filtered_summary">%1$s · Filtrlangan qoldiq: %2$s</string>
+    <string name="sort_by_remaining">Qoldiq bo‘yicha ↓</string>
+    <string name="debt_due">Muddat: %1$s</string>
+    <string name="debt_remaining">Qoldi: %1$s</string>
+    <string name="debt_payment_status">%1$s / %2$s (%3$d%%)</string>
+    <string name="debt_detail_title">Qarz tafsiloti</string>
+    <string name="payment_add_title">To‘lov qo‘shish</string>
+    <string name="location_obtained">Joylashuv olindi</string>
+    <string name="location_unavailable">Joylashuvni aniqlab bo‘lmadi</string>
+    <string name="location_denied">Lokatsiya ruxsati berilmadi</string>
+    <string name="camera_denied">Kamera ruxsati berilmadi</string>
+    <string name="debt_close_title">Qarzni yopish</string>
+    <string name="debt_close_message">Bu qarzni to‘liq yopilgan deb belgilaysizmi?</string>
+    <string name="debt_closed">Qarz yopildi</string>
+    <string name="person_name_required">Ismni kiriting</string>
+    <string name="debt_saved">Qarz saqlandi</string>
+    <string name="evidence_add_title">Dalil qo‘shish</string>
+    <string name="evidence_delete_message">Bu dalilni o‘chirmoqchimisiz?</string>
+    <string name="evidence_saved">Dalil saqlandi</string>
+    <string name="file_path_unsafe">Fayl yo‘li xavfsiz emas</string>
+
+    <!-- Recording service -->
+    <string name="record_channel_name">Yashirin yozish</string>
+    <string name="record_channel_description">Qarz uchun video yozish xizmati</string>
+    <string name="record_starting">Yozish boshlandi…</string>
+    <string name="record_running">Yozilmoqda…</string>
+
+    <!-- Backup -->
+    <string name="backup_folder_not_writable">Tanlangan papkaga yozib bo‘lmaydi</string>
+    <string name="backup_file_create_failed">Fayl yaratib bo‘lmadi</string>
+    <string name="backup_file_write_failed">Faylga yozib bo‘lmaydi</string>
+    <string name="backup_temp_dir_failed">Vaqtinchalik papka yaratilmadi</string>
+    <string name="backup_open_failed">Zaxira fayli ochilmadi</string>
+    <string name="backup_too_many_files">Zaxirada fayllar soni juda ko‘p</string>
+    <string name="backup_unsafe_path">Zaxirada xavfli fayl yo‘li aniqlandi</string>
+    <string name="backup_duplicate_file">Zaxirada takroriy fayl bor</string>
+    <string name="backup_dir_create_failed">Zaxira papkasi yaratilmadi</string>
+    <string name="backup_file_too_large">Zaxiradagi fayl juda katta</string>
+    <string name="backup_total_too_large">Zaxiraning ochilgan hajmi juda katta</string>
+    <string name="backup_data_too_large">data.json juda katta</string>
+    <string name="backup_data_missing">data.json topilmadi</string>
+    <string name="backup_media_dir_failed">Media papkasi yaratilmadi</string>
+    <string name="backup_restore_failed">Zaxira tiklanmadi</string>
+    <string name="backup_invalid_media_file">Zaxiradagi media fayli noto‘g‘ri</string>
+    <string name="backup_invalid_id">%1$s: ID takrorlangan yoki noto‘g‘ri</string>
+    <string name="backup_invalid_salary_day">Maosh kuni noto‘g‘ri</string>
+    <string name="backup_negative_paid">To‘langan summa manfiy</string>
+    <string name="backup_invalid_media_type">Media turi noto‘g‘ri</string>
+    <string name="backup_missing_relation">%1$s: bog‘langan yozuv topilmadi</string>
+    <string name="backup_not_integer">%1$s: butun son bo‘lishi kerak</string>
+    <string name="backup_not_number">%1$s: son noto‘g‘ri</string>
+    <string name="backup_amount_not_positive">Summa musbat bo‘lishi kerak</string>
+    <string name="backup_text_missing">%1$s: matn kiritilmagan</string>
+    <string name="backup_not_boolean">%1$s: mantiqiy qiymat noto‘g‘ri</string>
+    <string name="settings_currency">Valyuta</string>
+    <string name="currency_default">Standart (%1$s)</string>
+    <string name="currency_other">Boshqa…</string>
+    <string name="currency_custom_hint">Valyuta belgisi</string>
+    <string name="currency_invalid">1 dan 8 tagacha belgi kiriting</string>
+    <string name="backup_invalid_currency">Valyuta belgisi noto‘g‘ri</string>
+    <string name="auto_backup_title">Avto-zaxira</string>
+    <string name="auto_backup_off">O‘chirilgan</string>
+    <string name="auto_backup_permission_needed">Ruxsat berilmagan. Sozlash uchun bosing</string>
+    <string name="auto_backup_last_success">Oxirgi zaxira: %1$s</string>
+    <string name="auto_backup_last_error">Oxirgi xato: %1$s</string>
+    <string name="auto_backup_none_yet">Hali zaxira olinmagan</string>
+    <string name="backup_permission_title">Fayllarga kirish ruxsati</string>
+    <string name="backup_permission_message">Zaxiralar telefon xotirasidagi “backups” papkasiga yoziladi. Buning uchun “Barcha fayllarga kirish” ruxsatini yoqing.</string>
+    <string name="backup_permission_open">Sozlamalarni ochish</string>
+    <string name="backup_permission_required">“backups” papkasiga yozish uchun fayllarga kirish ruxsati kerak</string>
+    <string name="backup_folder_is_file">“backups” nomli fayl bor, papka yaratib bo‘lmaydi</string>
+    <string name="default_cash_name">Naqd pul</string>
+    <string name="payment_method_chip" translatable="false">%1$s %2$s</string>
+    <string name="card_masked_digits" translatable="false">•••• %1$s</string>
+    <string name="language_tag">uz</string>
+    <string name="app_name" translatable="false">Xarajatlar</string>
+    <string name="app_version">Xarajatlar v%1$s</string>
+
+    <!-- App Shortcuts -->
+    <string name="shortcut_qr_scan">QR Scan</string>
+    <string name="shortcut_qr_scan_long">QR chek skanerlash</string>
+    <string name="shortcut_add_expense">Xarajat</string>
+    <string name="shortcut_add_expense_long">Xarajat qo‘shish</string>
+    <string name="shortcut_ocr_scan">OCR Scan</string>
+    <string name="shortcut_ocr_scan_long">Matnni skanerlash</string>
+
+    <!-- OCR Scanner -->
+    <string name="ocr_status_scanning">Sonni kameraga ko‘rsating</string>
+    <string name="ocr_status_tap">Sonni bosib tanlang</string>
+</resources>

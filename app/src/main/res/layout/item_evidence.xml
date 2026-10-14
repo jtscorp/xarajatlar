@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="@dimen/corner_radius_small"
+    app:cardElevation="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/evidenceImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:minHeight="80dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/ui_dalil_rasmi"/>
+
+        <ImageView
+            android:id="@+id/typeIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:contentDescription="@string/ui_fayl_turi"/>
+
+        <!-- 48dp touch target wrapping 24dp icon -->
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|end">
+
+            <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background_dark"
+                android:src="@drawable/ic_close"
+                android:padding="4dp"
+                android:contentDescription="@string/delete"
+                app:tint="@android:color/white"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>

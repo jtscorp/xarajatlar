@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- APK "uz" tilini qo'llab-quvvatlashini e'lon qiladi. Qolgan matnlar values/ dan olinadi. -->
+    <string name="language_tag">uz</string>
+</resources>

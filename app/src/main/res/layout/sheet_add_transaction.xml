@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="24dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/ui_yangi_operatsiya" android:textAppearance="?textAppearanceHeadlineSmall" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/addManualExpense"
+        style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="start|center_vertical"
+        android:text="@string/ui_xarajatni_qolda_kiritish" app:icon="@drawable/ic_edit_manual" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/addIncome"
+        style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="start|center_vertical"
+        android:text="@string/ui_daromad_qoshish" app:icon="@drawable/ic_add" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/addQrExpense"
+        style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="start|center_vertical"
+        android:text="@string/scan_qr_receipt" app:icon="@drawable/ic_qr_code" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/addOcrExpense"
+        style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="start|center_vertical"
+        android:text="@string/ui_raqamni_kameradan_oqish" app:icon="@drawable/ic_ocr" />
+</LinearLayout>
