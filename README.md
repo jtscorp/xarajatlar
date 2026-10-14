@@ -51,34 +51,6 @@ JDK 25 va Android SDK (API 35) kerak.
 ./gradlew assembleRelease       # release APK -> app/build/outputs/apk/release/
 ```
 
-Release APK'ni imzolash uchun `~/.xarajatlar-signing/keystore.properties` fayli kerak:
-
-```
-storeFile=/path/to/xarajatlar-release.jks
-storePassword=...
-keyAlias=...
-keyPassword=...
-```
-
-Bu fayl bo'lmasa, release APK imzosiz build qilinadi.
-
-### Release
-
-`v*` ko'rinishidagi tag push qilinganda GitHub Actions imzolangan APK'ni build qiladi va uni shu tag'ning Release'iga biriktiradi:
-
-```
-git tag v2.0.1
-git push origin v2.0.1
-```
-
-Tag `app/build.gradle.kts` ichidagi `versionName` bilan bir xil bo'lishi kerak. Repo sozlamalarida (`Settings → Secrets and variables → Actions`) quyidagi secret'lar bo'lishi kerak:
-
-| Secret | Qiymat |
-|---|---|
-| `KEYSTORE_BASE64` | `base64 -w0 xarajatlar-release.jks` natijasi |
-| `KEYSTORE_PASSWORD` | keystore paroli |
-| `KEY_ALIAS` | kalit alias'i |
-| `KEY_PASSWORD` | kalit paroli |
 
 ***
 
@@ -120,32 +92,3 @@ JDK 25 and the Android SDK (API 35) are required.
 ./gradlew testDebugUnitTest     # unit tests
 ./gradlew assembleRelease       # release APK -> app/build/outputs/apk/release/
 ```
-
-Signing the release APK needs a `~/.xarajatlar-signing/keystore.properties` file:
-
-```
-storeFile=/path/to/xarajatlar-release.jks
-storePassword=...
-keyAlias=...
-keyPassword=...
-```
-
-Without this file the release APK is built unsigned.
-
-### Release
-
-Pushing a tag like `v*` makes GitHub Actions build a signed APK and attach it to that tag's Release:
-
-```
-git tag v2.0.1
-git push origin v2.0.1
-```
-
-The tag must match `versionName` in `app/build.gradle.kts`. The repository settings (`Settings → Secrets and variables → Actions`) need these secrets:
-
-| Secret | Value |
-|---|---|
-| `KEYSTORE_BASE64` | output of `base64 -w0 xarajatlar-release.jks` |
-| `KEYSTORE_PASSWORD` | keystore password |
-| `KEY_ALIAS` | key alias |
-| `KEY_PASSWORD` | key password |
